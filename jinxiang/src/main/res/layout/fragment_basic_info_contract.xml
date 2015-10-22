@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin20dp"
+    android:layout_marginRight="@dimen/margin20dp"
+    android:layout_marginTop="@dimen/margin20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="流水号" />
+
+        <TextView
+
+            android:id="@+id/id_project_num"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="项目名称" />
+
+        <TextView
+            android:id="@+id/id_project_name"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="客户名称" />
+
+        <TextView
+            android:id="@+id/id_project_customer_name"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="项目金额" />
+
+        <TextView
+            android:id="@+id/id_project_cost"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="付款方式" />
+
+        <TextView
+            android:id="@+id/id_project_payway"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="合同编号" />
+
+        <TextView
+            android:id="@+id/id_project_order_num"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="项目状态" />
+
+        <TextView
+            android:id="@+id/id_project_status"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="签订日期" />
+
+        <TextView
+            android:id="@+id/id_project_sign_date"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="到期日期" />
+
+        <TextView
+            android:id="@+id/id_project_end_date"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/id_project_remark"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/holo_gray"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb1"
+            style="@style/mat0ter_detail_handle_btn_style" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb2"
+            style="@style/mat0ter_detail_handle_btn_style" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb3"
+            style="@style/mat0ter_detail_handle_btn_style"
+            android:visibility="gone" />
+    </RadioGroup>
+</LinearLayout>

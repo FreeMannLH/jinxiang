@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:background="#e0eef9"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin5dp"
+            android:text="锤子"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin5dp"
+            android:text="3"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin5dp"
+            android:text="财务部"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+    </TableRow>
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin20dp"
+    android:layout_marginRight="@dimen/margin20dp"
+    android:layout_marginLeft="@dimen/margin20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="采购人"
+            />
+
+        <TextView
+
+            android:id="@+id/id_name"
+            style="@style/matter_basic_info_item_style"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="备注"
+            />
+
+        <TextView
+            android:id="@+id/id_remark"
+            style="@style/matter_basic_info_item_style"
+            />
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+
+
+    <TableLayout
+        android:layout_marginTop="@dimen/margin10dp"
+        android:id="@+id/basicInfo_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:showDividers="end"
+        android:shrinkColumns="0,2"
+        android:stretchColumns="0,1,2">
+
+        <TableRow
+            >
+
+            <TextView
+                android:background="#c8dff1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:text="物品"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:background="#c8dff1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:text="数量"
+                android:textSize="@dimen/text_size_time"
+                />
+
+            <TextView
+                android:background="#c8dff1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:text="单位"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit1"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods2"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count2"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit2"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods3"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count3"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit3"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods4"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count4"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit4"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods5"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count5"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit5"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods6"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count6"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit6"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods7"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count7"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit7"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+
+        <TableRow
+            >
+
+            <TextView
+                android:id="@+id/id_goods8"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_count8"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_unit8"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin10dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                android:id="@+id/id_rate_time"
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="2015-02.14  19：10：23"
+                android:textColor="@color/holo_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/changed_stage"
+                />
+
+            <TextView
+                android:id="@+id/changed_stage"
+                style="@style/project_rate_item"
+                android:background="@null"
+                android:textColor="@color/holo_light_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/change_reason"
+                />
+
+            <TextView
+                android:id="@+id/changed_reason"
+                style="@style/project_rate_item"
+                android:background="@null"
+                android:textColor="@color/text_handle_time_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/changed_staff"
+                />
+
+            <TextView
+                android:id="@+id/changed_staff"
+                style="@style/project_rate_item"
+                android:background="@null"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="ideatc.jinxiang.activity.CooperateChanceDetailActivity">
+    <item android:id="@+id/stage_change"
+          android:title="@string/stage_change"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+      <item android:id="@+id/transform_project"
+            android:title="@string/transform_project"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+</menu>

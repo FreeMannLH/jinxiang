@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ideatc.jinxiang.activity.VisitSignActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin10dp"
+                    android:text="见证人:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <EditText
+                    android:id="@+id/maker"
+                    style="@style/add_customer_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin10dp"
+                    android:text="联系电话:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/add_customer_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:padding="@dimen/margin10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin10dp"
+                    android:text="出差日期:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/travel_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin10dp"
+                    android:text="出发时间:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin10dp"
+                    android:singleLine="true"
+                    android:text="点击选择时间"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin10dp"
+                    android:text="返回时间:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/back_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin10dp"
+                    android:singleLine="true"
+                    android:text="点击选择时间"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin10dp"
+                    android:text="出差事由:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <EditText
+                    android:id="@+id/reason"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:padding="@dimen/margin10dp"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin10dp"
+                    android:text="出差地址:"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/visit_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:padding="@dimen/margin10dp"
+                    android:text="正在定位,请稍候"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:id="@+id/id_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin20dp"
+                android:background="@drawable/round_corners_bg"
+                android:gravity="center"
+                android:padding="@dimen/margin10dp"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_default" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

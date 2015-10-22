@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ideatc.jinxiang"
+
+    >
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".base.application.BaseApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/app_icon"
+        android:killAfterRestore="false"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:process="system"
+        android:theme="@style/AppTheme">
+        <service
+            android:exported="false"
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="U21qbTYtsGPvBrnK9SrxKvff" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/setting"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ContactDetailActivity"
+            android:label="@string/contactDetai"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ElectronicDetailActivity"
+            android:label="@string/electronic_bulletin"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MatterDetailActivity"
+            android:label="@string/matter_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MatterDetailForHandledActivity"
+            android:label="@string/matter_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MyInfoActivity"
+            android:label="@string/title_activity_my_info"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AgreeActivity"
+            android:label="@string/agree"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MyVisitRecordActivity"
+            android:label="@string/title_activity_my_visit_record"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.VisitSignActivity"
+            android:label="@string/visit_sign"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.VisitDetailActivity"
+            android:label="@string/title_activity_visit_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MyCustomerActivity"
+            android:label="@string/title_activity_my_customer"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CustomerDetailInfoActivity"
+            android:label="@string/title_activity_customer_detail_info"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MyProjectActivity"
+            android:label="@string/title_activity_my_project"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ProjectDetailActivity"
+            android:label="@string/title_activity_project_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ProjectContactDetailActivity"
+            android:label="@string/title_activity_project_contact_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BackActivity"
+            android:label="@string/title_activity_back"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.FinishFlowActivity"
+            android:label="@string/title_activity_finish_flow"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MyCompanyContactsActivity"
+            android:label="@string/title_activity_my_company_contacts"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MyCooperateChanceActivity"
+            android:label="@string/title_activity_my_cooperate_chance"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateChanceDetailActivity"
+            android:label="@string/title_activity_cooperate_chance_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NewCustomerActivity"
+            android:label="@string/title_activity_new_customer"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NewCustomerContactsActivity"
+            android:label="@string/title_activity_new_customer_contacts"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NewCustomerContactInfoActivity"
+            android:label="@string/title_activity_new_customer_contact_info"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateContactsActivity"
+            android:label="@string/title_activity_project_contact_detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NewCooperateActivity"
+            android:label="@string/title_activity_new_cooperate"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NewCooperateContactsAndMattersActivity"
+            android:label="@string/title_activity_new_cooperate_contacts_and_matters"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateAddContactActivity"
+            android:label="@string/title_activity_cooperate_add_contact"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateAddMatterActivity"
+            android:label="@string/title_activity_cooperate_add_matter"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateChangeStageActivity"
+            android:label="@string/stage_change"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.CooperateTransProjectActivity"
+            android:label="@string/transform_project"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PostProjectToFlowActivity"
+            android:label="@string/title_activity_post_project_to_flow"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name=".system.service.CheckNewMsgService"
+            android:enabled="true"
+            android:process=":message" />
+
+        <receiver android:name=".system.service.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.TravelRegActivity"
+            android:label="@string/title_activity_travel_reg"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>

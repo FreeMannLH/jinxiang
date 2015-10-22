@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ideatc.jinxiang.fragment.matters_fragment.DaiBanFragment">
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/progress"
+        style="@style/GNowProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/smooth_progress_height"
+        />
+
+    <ExpandableListView
+        android:id="@+id/matters_expandable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

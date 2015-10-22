@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ideatc.jinxiang.activity.ContactDetailActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_detail_cardview_height"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_marginRight="@dimen/margin5dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        card:cardCornerRadius="@dimen/cardview_default_radius"
+        card:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_contact_headface"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin10dp"
+                android:layout_weight="2"
+                android:src="@drawable/app_icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin10dp">
+
+                <TextView
+                    android:id="@+id/id_contacts_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="张三"
+                    android:textSize="@dimen/text_size_default"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_contacts_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/sir"
+                        android:textSize="@dimen/text_size_sub_default" />
+
+                    <TextView
+                        android:id="@+id/id_contacts_detail_position"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/margin10dp"
+                        android:textSize="@dimen/text_size_sub_default" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/id_contact_phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <ImageView
+                    android:id="@+id/id_contacts_detail_send_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:clickable="true"
+                    android:src="@drawable/message" />
+
+                <ImageView
+                    android:id="@+id/id_contacts_detail_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:clickable="true"
+                    android:src="@drawable/phone" />
+            </LinearLayout>
+
+            <Space style="@style/style_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/main_contact"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <CheckBox
+                    android:id="@+id/id_contact_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <Space style="@style/style_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/role_type"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/id_contact_role_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+            </LinearLayout>
+
+            <Space style="@style/style_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/support_level"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="@dimen/text_size_sub_default" />
+
+                <TextView
+                    android:id="@+id/id_contact_support_level"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_size_sub_default" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

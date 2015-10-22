@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="ideatc.jinxiang.activity.MyProjectActivity">
+    <item
+        android:id="@+id/id_start_project"
+        android:orderInCategory="100"
+        android:icon="@drawable/user_coupon"
+        android:title="@string/start_project"
+        app:showAsAction="always"/>
+</menu>

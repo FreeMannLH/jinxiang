@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ideatc.jinxiang.activity.BackActivity">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginRight="@dimen/margin10dp"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin30dp"
+        android:id="@+id/id_back_textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:minLines="6"
+            android:textColor="@color/holo_gray"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/id_back_editText"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:hint="退回原因"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_btn_confirm"
+            android:background="@drawable/selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin10dp"
+            android:text="@string/confirm"
+            android:textSize="@dimen/text_size_time"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_btn_cancel"
+            android:background="@drawable/selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin10dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size_time"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

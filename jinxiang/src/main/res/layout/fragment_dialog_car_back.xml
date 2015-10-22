@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:hint=" 选择返回日期"
+        android:id="@+id/id_car_back_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginRight="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:padding="@dimen/margin10dp"
+        android:textSize="@dimen/abc_text_size_subhead_material"
+        />
+    <EditText
+        android:id="@+id/id_after_km"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contacts_edit_height"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginRight="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:background="@drawable/selector_search"
+        android:drawablePadding="@dimen/margin10dp"
+        android:hint="   回来后公里数"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textSize="@dimen/abc_text_size_subhead_material"
+        />
+
+
+    <!--<Button-->
+    <!--android:background="@drawable/selector"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/id_sure_edit_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="搜索"/>-->
+
+</LinearLayout>

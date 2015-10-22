@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin20dp"
+    android:layout_marginRight="@dimen/margin20dp"
+    android:layout_marginTop="@dimen/margin20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="用章人" />
+
+        <TextView
+
+            android:id="@+id/id_use_name"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="单号" />
+
+        <TextView
+
+            android:id="@+id/id_order"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="盖章类型" />
+
+        <TextView
+            android:id="@+id/id_type"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="盖章日期" />
+
+        <TextView
+            android:id="@+id/id_date"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/id_order_num"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+
+    <Space style="@style/style_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/matter_basic_info_title"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/id_remark"
+            style="@style/matter_basic_info_item_style" />
+    </LinearLayout>
+
+    <Space style="@style/style_divider" />
+
+
+    <Space style="@style/style_divider" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/holo_gray"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb1"
+            style="@style/mat0ter_detail_handle_btn_style"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb2"
+            style="@style/mat0ter_detail_handle_btn_style" />
+    </RadioGroup>
+</LinearLayout>

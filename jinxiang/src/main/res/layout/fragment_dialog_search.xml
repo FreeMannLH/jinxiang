@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center"
+        android:padding="@dimen/margin10dp"
+        android:id="@+id/id_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginRight="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:hint="   开始日期"
+        android:textSize="@dimen/abc_text_size_subhead_material"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:padding="@dimen/margin10dp"
+        android:id="@+id/id_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginRight="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:hint="   结束日期"
+        android:textSize="@dimen/abc_text_size_subhead_material"
+        />
+
+    <!--<Button-->
+        <!--android:background="@drawable/selector"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/id_sure_edit_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="搜索"/>-->
+
+</LinearLayout>

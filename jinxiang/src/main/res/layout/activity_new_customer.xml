@@ -1,0 +1,313 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/emp_no"/>
+
+                <EditText
+                    android:id="@+id/employee"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customer_name"/>
+
+                <EditText
+
+                    android:id="@+id/customer_name"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/contact_addr"/>
+
+                <EditText
+                    android:id="@+id/customer_addr"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customer_type"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/customer_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/PotentialLevel"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/latencyLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customerLevel"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/customer_Level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customerResource"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/customerSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customerArea"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/customer_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/customerIndustry"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/trade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/intent"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/intent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:saveEnabled="false"-->
+            <!--android:id="@+id/honorSpinner"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="@dimen/margin10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--/>-->
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="职员数(正式客户)："/>
+
+                <EditText
+                    android:id="@+id/customer_employee_num"
+                    style="@style/add_customer_edittext_style"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="年额营业(正式客户)："/>
+
+                <EditText
+                    android:id="@+id/customer_annual_turnover"
+                    style="@style/add_customer_edittext_style"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="注册资金(正式客户)："/>
+
+                <EditText
+                    android:id="@+id/register_capital"
+                    style="@style/add_customer_edittext_style"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="成立日期(正式客户)："/>
+
+                <EditText
+                    android:id="@+id/founding_time"
+                    style="@style/add_customer_edittext_style"
+                    android:hint=""
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="法定地址(正式客户)："/>
+
+                <EditText
+                    android:id="@+id/legal_addr"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/reMark"/>
+
+                <EditText
+                    android:id="@+id/remark"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:id="@+id/id_button_next_step"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/margin5dp"-->
+            <!--android:background="@color/material_blue_toolbar"-->
+            <!--android:text="下一步"-->
+            <!--android:textSize="@dimen/text_size_time"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

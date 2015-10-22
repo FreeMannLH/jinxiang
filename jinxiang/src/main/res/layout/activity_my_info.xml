@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ideatc.jinxiang.activity.MyInfoActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+
+                    style="@style/style_my_info_title"
+                    android:text="工   号："/>
+
+                <TextView
+                    android:id="@+id/id_employee"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="姓   名："
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="性   别："
+                    />
+
+
+                <TextView
+                    android:id="@+id/sex"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="部   门："
+                    />
+
+                <TextView
+                    android:id="@+id/department"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="职   位："
+                    />
+
+                <TextView
+                    android:id="@+id/position"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="身 份 证："
+                    />
+
+                <TextView
+                    android:id="@+id/identity"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="生  日："
+                    />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="手  机："
+                    />
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="邮  箱："
+                    />
+
+                <TextView
+                    android:id="@+id/eMail"
+                    style="@style/style_my_info_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5dp">
+
+                <TextView
+                    style="@style/style_my_info_title"
+                    android:text="到职日期："
+                    />
+
+                <TextView
+
+                    android:id="@+id/workDate"
+                    style="@style/style_my_info_content"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/style_divider"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

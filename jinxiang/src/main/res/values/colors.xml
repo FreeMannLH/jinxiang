@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="material_green_A200">#FD87A9</color>
+    <color name="material_blue_toolbar">#2c94dd</color>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="holo_gray">#cdcdcd</color>
+    <color name="holo_light_blue">#2d94de</color>
+    <color name="tablayout_color">#333333</color>
+    <color name="gray">#f1f1f1</color>
+    <color name="blue">#dfeffc</color>
+    <color name="text_blue">#47a1e2</color>
+    <color name="text_color_light_black">#363636</color>
+    <color name="text_sub_color_light_gray">#666666</color>
+    <color name="project_business_count_background">#93bfe4</color>
+
+    <color name="project_business_title">#c8dff1</color>
+    <color name="project_business_item">#e0eef9</color>
+    <color name="text_handle_time_color">#2a9d32</color>
+    <color name="stroke">#dddddd</color>
+    <color name="logo_background">#50b5fb</color>
+</resources>

@@ -1,0 +1,385 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="ideatc.jinxiang.fragment.matter_detail_acitivity.BasicInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin5dp"
+                android:layout_marginRight="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:padding="@dimen/margin10dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="申请人：周杰伦"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="日期：2015-08-09"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp"
+                    android:text="领用部门：财务部"
+                    android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp"
+                    android:text="类型：办公用品领用"
+                    android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp"
+                    android:text="状态：提交"
+                    android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                <TextView
+                    android:id="@+id/prevNode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp"
+                    android:text="上一环节：直接申请人"
+                    android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                <TextView
+                    android:id="@+id/currentNode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin5dp"
+                    android:text="当前环节：直接上级"
+                    android:textSize="@dimen/abc_text_size_subhead_material"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/basicInfo_tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="@dimen/margin10dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:padding="@dimen/margin5dp"
+                android:showDividers="end"
+                android:shrinkColumns="0,2"
+                android:stretchColumns="0,1,2">
+
+                <TableRow
+                    >
+
+                    <TextView
+                        android:background="#c8dff1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="物品"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:background="#c8dff1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="数量"
+                        android:textSize="@dimen/abc_text_size_subhead_material"
+                        />
+
+                    <TextView
+                        android:background="#c8dff1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="单位"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit1"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit2"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods3"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count3"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit3"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods4"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count4"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit4"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods6"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count6"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit6"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods7"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count7"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit7"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#e0eef9"
+                    >
+
+                    <TextView
+                        android:id="@+id/id_goods8"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="锤子"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_count8"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="3"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                    <TextView
+                        android:id="@+id/id_unit8"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/margin5dp"
+                        android:text="财务部"
+                        android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/giveBack"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/id_rb_agree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textSize="@dimen/abc_text_size_subhead_material"/>
+    </LinearLayout>
+</RelativeLayout>

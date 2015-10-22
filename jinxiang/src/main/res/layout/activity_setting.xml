@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <!-- <TextView
+         style="@style/setting_btn_style"
+         android:text="周杰伦"
+         />-->
+
+    <!--  <Space
+          style="@style/style_divider"/>-->
+
+    <TextView
+        android:drawableRight="@drawable/next"
+        android:id="@+id/id_change_password_btn"
+        style="@style/setting_btn_style"
+        android:text="修改密码"
+        />
+
+    <Space
+        style="@style/style_divider"/>
+
+    <TextView
+        android:drawableRight="@drawable/next"
+        android:id="@+id/id_version_update_btn"
+        style="@style/setting_btn_style"
+        android:text="版本更新"
+        />
+
+    <Space
+        style="@style/style_divider"/>
+
+    <TextView
+        android:drawableRight="@drawable/next"
+        android:id="@+id/id_about_us_btn"
+        style="@style/setting_btn_style"
+        android:text="关于我们"
+        />
+
+    <Space
+        style="@style/style_divider"/>
+
+
+    <TextView
+        android:id="@+id/id_user_exit_btn"
+        style="@style/setting_btn_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin5dp"
+        android:gravity="center"
+        android:text="注销用户"
+        android:textColor="@color/gplus_color_4"
+        />
+
+</LinearLayout>

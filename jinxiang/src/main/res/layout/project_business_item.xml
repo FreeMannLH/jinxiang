@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/project_business_item_height"
+    android:layout_margin="@dimen/margin10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_business_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/project_business_count_background"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin10dp"
+        android:paddingRight="@dimen/margin10dp"
+        android:text="1"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/project_business_title"
+            android:gravity="center"
+            android:text="@string/business_name"
+            android:textColor="@color/text_color_light_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/project_business_item"
+            android:gravity="center"
+            android:text="@string/official_cost"
+            android:textColor="@color/text_color_light_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/project_business_item"
+            android:gravity="center"
+            android:text="@string/agent_cost"
+            android:textColor="@color/text_color_light_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/project_business_item"
+            android:gravity="center"
+            android:text="@string/other_cost"
+            android:textColor="@color/text_color_light_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/project_business_item"
+            android:gravity="center"
+            android:text="@string/total_cost"
+            android:textColor="@color/text_color_light_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/project_business_title"
+            android:id="@+id/id_business_name"
+            style="@style/project_business_item"/>
+
+        <TextView
+            android:id="@+id/id_business_office_price"
+            style="@style/project_business_item"/>
+
+        <TextView
+            android:id="@+id/id_business_agent_price"
+            style="@style/project_business_item"/>
+
+        <TextView
+            android:id="@+id/id_business_other_price"
+            style="@style/project_business_item"/>
+
+        <TextView
+            android:id="@+id/id_business_total_price"
+            style="@style/project_business_item"/>
+    </LinearLayout>
+</LinearLayout>

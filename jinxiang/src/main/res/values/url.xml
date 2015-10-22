@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--获取我的客户列表-->
+    <string name="getmycustomers">/customer/getmycustomers</string>
+    <!--获取客户详细信息-->
+    <string name="getcustomerinfo">/customer/getcustomerinfo</string>
+    <!--获取我的所有客户-->
+    <string name="getmyallcustomers">/customer/getmyallcustomers</string>
+    <!--获取我的拜访记录-->
+    <string name="getmyvisit">/customer/getmyvisit</string>
+    <!--获取拜访的详细信息-->
+    <string name="getvisitinfo">/customer/getvisitinfo</string>
+    <!--添加拜访记录-->
+    <string name="addvisitpost">/customer/addvisitpost</string>
+    <!--更新拜访结果-->
+    <string name="visitresulepost">/customer/visitresulepost</string>
+    <!--获取我的项目合同-->
+    <string name="getmycontracts">/customer/getmycontracts</string>
+    <!--获取项目详细信息-->
+    <string name="getcontractinfo">/customer/getcontractinfo</string>
+
+    <!--获取电子公告列表-->
+    <string name="GetNoticeList">/GetNoticeList</string>
+    <!--获取指定公告数据 -->
+    <string name="GetNotice">/GetNotice</string>
+
+    <string name="user_login">/Login</string>
+    <!--获取待办事项-->
+    <string name="GetWaitHandle">/GetWaitHandle</string>
+
+
+    <!--获取已办事项-->
+    <string name="GetHandled">/GetHandled</string>
+    <!--获取办结事项-->
+    <string name="GetFinishHandle">/GetFinishHandle</string>
+    <!--提交流程-->
+    <string name="SubmitSysFlow">/SubmitSysFlow</string>
+    <!--退回流程-->
+    <string name="BackSysFlow">/BackSysFlow</string>
+    <!--结束流程-->
+    <string name="FinishSysFlow">/FinishSysFlow</string>
+    <!--获取流程信息-->
+    <string name="SysFlowInfo">/SysFlowInfo</string>
+
+</resources>

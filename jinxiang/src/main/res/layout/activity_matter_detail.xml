@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:tab="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="ideatc.jinxiang.activity.MatterDetailActivity">
+
+    <include
+        android:id="@+id/toolBar_layout"
+        layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar_layout"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            tab:tabIndicatorColor="@android:color/holo_red_light"
+            android:id="@+id/matter_detail_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

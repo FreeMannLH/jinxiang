@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin10dp"
+            android:text="@string/next_step" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/id_next_step_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin10dp"
+            android:text="下一办理人列表(可多选)" />
+
+        <!-- <android.support.v7.widget.AppCompatSpinner
+             android:id="@+id/next_node_operator"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:paddingLeft="@dimen/margin20dp" />-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style"
+        android:padding="@dimen/margin5dp">
+
+        <TextView
+            style="@style/add_contact_textview_style"
+            android:text="@string/handle_oppion" />
+
+        <EditText
+            android:id="@+id/handle_opinion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="@dimen/text_size_sub_default"
+
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/id_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin30dp"
+        android:background="@drawable/round_corners_bg"
+        android:text="@string/confirm" />
+</LinearLayout>

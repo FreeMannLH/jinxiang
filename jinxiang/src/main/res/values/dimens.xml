@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>\
+
+    <!--控件dimension-->
+    <dimen name="toolbar_minheight">40dp</dimen>
+    <dimen name="floatingbutton_width">56dp</dimen>
+    <dimen name="floatingbutton_margin">20dp</dimen>
+    <dimen name="smooth_progress_height">10dip</dimen>
+    <dimen name="setting_padding_left">16dp</dimen>
+    <dimen name="setting_cardview_height">50dp</dimen>
+    <dimen name="electronic_cardview_item_height">240dp</dimen>
+    <dimen name="contact_detail_cardview_height">120dp</dimen>
+    <dimen name="contact_detail_sub_cardview_height">210dp</dimen>
+
+    <!--控件dimension-->
+    <dimen name="margin2dp">2dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+
+    <dimen name="contacts_edit_height">40dp</dimen>
+    <dimen name="contacts_item_height">50dp</dimen>
+    <dimen name="text_size_default">15sp</dimen>
+    <dimen name="text_size_sub_default">14sp</dimen>
+    <dimen name="text_size_time">13sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+
+    <dimen name="about_us">16sp</dimen>
+
+    <dimen name="loading_dialog_width">100dp</dimen>
+    <dimen name="project_business_item_height">200dp</dimen>
+    <dimen name="project_rate_item_height">240dp</dimen>
+    <dimen name="matter_item_height">300dp</dimen>
+
+    <dimen name="fragment_crm_cardView_marginTop">5dp</dimen>
+
+    <dimen name="confirm_button_margin">20dp</dimen>
+
+</resources>

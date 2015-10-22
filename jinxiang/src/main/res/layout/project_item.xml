@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/project_item_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin10dp"
+    android:layout_marginRight="@dimen/margin10dp"
+    android:layout_marginTop="@dimen/margin5dp"
+    android:background="@drawable/selector"
+    android:padding="@dimen/margin10dp"
+    card:cardCornerRadius="@dimen/cardview_default_radius"
+    card:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_sub_default"/>
+
+            <TextView
+                android:id="@+id/id_project_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_sub_default"/>
+
+            <TextView
+                android:id="@+id/id_project_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/targetCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/visit_object"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_project_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_project_payway"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_project_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+            <TextView
+                android:id="@+id/id_project_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/margin5dp"
+                android:textSize="@dimen/text_size_time"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

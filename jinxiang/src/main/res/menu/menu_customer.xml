@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/id_add_customer"
+        android:icon="@drawable/addman"
+        android:orderInCategory="100"
+        android:title="@string/add_customer"
+        app:showAsAction="always"/>
+</menu>

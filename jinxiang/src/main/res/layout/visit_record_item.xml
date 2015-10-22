@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin10dp"
+    android:layout_marginRight="@dimen/margin10dp"
+    android:background="@drawable/selector"
+    android:id="@+id/visit_item_cardview"
+    android:layout_marginTop="@dimen/margin5dp"
+    card:cardCornerRadius="@dimen/cardview_default_radius"
+    card:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:padding="@dimen/margin5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/id_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:text="第一次接触的撒旦撒"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_default"/>
+
+            <TextView
+                android:layout_below="@id/id_describe"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:text="2015-08-06 14:00"
+                android:textSize="@dimen/text_size_sub_default"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/targetCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:text="目标客户：大思路科技"
+                android:textSize="@dimen/text_size_sub_default"/>
+
+            <TextView
+                android:id="@+id/visit_object"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:text="拜访人员：张三"
+                android:textSize="@dimen/text_size_sub_default"/>
+
+        </LinearLayout>
+
+      <!--  <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin10dp"
+            android:text="结果：确定意向目标"
+            android:textSize="@dimen/text_size_sub_default"/>-->
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

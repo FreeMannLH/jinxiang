@@ -1,0 +1,59 @@
+<com.manuelpeinado.multichoiceadapter.CheckableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@android:id/checkbox"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_use_stamp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin5dp"
+            android:text="用章人"
+            android:textSize="@dimen/text_size_time"/>
+
+        <TextView
+            android:id="@+id/id_use_stamp_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin5dp"
+            android:text="盖章类型"
+            android:textSize="@dimen/text_size_time"
+            />
+
+        <TextView
+            android:id="@+id/id_use_stamp_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin5dp"
+            android:text="单号"
+            android:textSize="@dimen/text_size_time"/>
+        <TextView
+            android:id="@+id/id_use_stamp_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin5dp"
+            android:text="编号"
+            android:textSize="@dimen/text_size_time"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/id_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"/>
+
+</com.manuelpeinado.multichoiceadapter.CheckableRelativeLayout>

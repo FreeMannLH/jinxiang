@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/emp_no"/>
+
+                <EditText
+                    android:id="@+id/employee"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/title"/>
+
+                <EditText
+
+                    android:id="@+id/title"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/choose_customer"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/customer_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/changed_stage"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/stage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/add_contact_layout_style">
+
+                <TextView
+                    style="@style/add_contact_textview_style"
+                    android:text="@string/reMark"/>
+
+                <EditText
+                    android:id="@+id/remark"
+                    style="@style/add_customer_edittext_style"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

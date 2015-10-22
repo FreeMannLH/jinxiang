@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="ideatc.jinxiang.activity.NewCooperateActivity">
+    <item android:id="@+id/next_step"
+          android:title="@string/next"
+          app:showAsAction="always"
+          android:orderInCategory="100"
+          />
+</menu>

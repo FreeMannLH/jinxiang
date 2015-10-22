@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ideatc.jinxiang.activity.MyCustomerActivity">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <FrameLayout
+        android:id="@+id/id_myCustomer_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.sevenheaven.segmentcontrol.SegmentControl
+        xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_seg"
+        segmentcontrol:texts="潜在客户|正式客户"
+        segmentcontrol:colors="@color/material_blue_toolbar"
+        segmentcontrol:cornerRadiuss="5dip"
+        segmentcontrol:directions="horizon"
+        segmentcontrol:verticalGap="10dip"
+        segmentcontrol:horizonGap="30dp"
+        style="@style/style_segment"/>
+</LinearLayout>

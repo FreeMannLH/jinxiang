@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_theme"
+            />
+
+        <TextView
+
+            android:id="@+id/id_visit_theme"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_time"/>
+
+        <TextView
+            android:id="@+id/id_visit_time"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_customer"
+            />
+
+        <TextView
+            android:id="@+id/id_visit_customer"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_customer_manager"
+            />
+
+        <TextView
+            android:id="@+id/id_visit_manager"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_address"
+            />
+
+        <TextView
+            android:id="@+id/id_visit_address"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cardview_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/visit_detail_item_style"
+            android:text="@string/visit_result"
+            />
+
+        <TextView
+            android:id="@+id/id_visit_result"
+            style="@style/visit_detail_item"/>
+    </LinearLayout>
+
+    <Space
+        style="@style/style_divider"/>-->
+
+</LinearLayout>

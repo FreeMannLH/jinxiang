@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin20dp"
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="@string/matter"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center"
+            android:spinnerMode="dialog"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="@string/office_cost"/>
+
+        <EditText
+            android:id="@+id/office_cost"
+            style="@style/add_customer_edittext_style"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="代理费用："/>
+
+        <EditText
+            android:id="@+id/agent_cost"
+            style="@style/add_customer_edittext_style"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="@string/other_costs"/>
+
+        <EditText
+            android:id="@+id/other_cost"
+            style="@style/add_customer_edittext_style"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="@string/total_Costs"/>
+
+        <EditText
+            android:id="@+id/total_cost"
+            style="@style/add_customer_edittext_style"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_contact_layout_style">
+
+        <TextView
+
+            style="@style/add_contact_textview_style"
+            android:text="@string/remark"/>
+
+        <EditText
+            android:id="@+id/remark"
+            style="@style/add_customer_edittext_style"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/id_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/confirm_button_margin"
+        android:background="@drawable/round_corners_bg"
+        android:text="@string/confirm"/>
+</LinearLayout>

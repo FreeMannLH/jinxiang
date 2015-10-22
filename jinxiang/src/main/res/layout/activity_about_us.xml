@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:padding="@dimen/margin5dp"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/jinxiang"
+            android:textSize="@dimen/text_size_sub_default"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/dasilu"
+            android:textSize="@dimen/text_size_sub_default"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout"
+        android:layout_below="@id/toolBar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/app_icon"/>
+
+        <TextView
+            android:padding="@dimen/margin5dp"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="版本号：1.0"
+            android:textColor="@color/material_blue_500"
+            android:textSize="@dimen/about_us"/>
+
+        <TextView
+
+            style="@style/style_about_us_textview"
+            android:text="联系电话：0595-22511322/22599322"/>
+
+        <TextView
+            style="@style/style_about_us_textview"
+            android:text="传    真：0595-22511068"
+            />
+
+        <TextView
+            style="@style/style_about_us_textview"
+            android:text="邮   箱：jxtm@vip.163.com"
+            />
+
+        <TextView
+            style="@style/style_about_us_textview"
+            android:text="邮   编：362000"
+            />
+    </LinearLayout>
+</RelativeLayout>

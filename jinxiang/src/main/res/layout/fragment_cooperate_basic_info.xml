@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:text="@string/order_no"
+                />
+
+            <TextView
+                android:id="@+id/order_no"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:text="@string/title"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/visit_detail_item_style"
+                android:text="@string/stage"
+                />
+
+            <TextView
+                android:id="@+id/stage"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:text="@string/customer_name"
+                />
+
+            <TextView
+                android:id="@+id/customer_name"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:text="@string/customer_manager"
+                />
+
+            <TextView
+                android:id="@+id/id_customer_manager"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_cardview_height"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:text="@string/remark"
+                />
+
+            <TextView
+                android:id="@+id/remark"
+                style="@style/visit_detail_item"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Space
+            style="@style/style_divider"/>
+
+    </LinearLayout>
+</ScrollView>

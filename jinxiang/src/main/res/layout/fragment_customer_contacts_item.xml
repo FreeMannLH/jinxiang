@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/id_customer_contact_layout"
+              android:layout_margin="@dimen/margin5dp"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_customer_contact_name"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="@dimen/text_size_sub_default"
+        android:padding="@dimen/margin10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:drawableRight="@drawable/next"
+        android:id="@+id/id_customer_contact_position"
+        android:textColor="@color/text_sub_color_light_gray"
+        android:textSize="@dimen/text_size_sub_default"
+        android:padding="@dimen/margin10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+</LinearLayout>

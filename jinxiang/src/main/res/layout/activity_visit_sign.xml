@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ideatc.jinxiang.activity.VisitSignActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin10dp"
+            android:text="目标客户:"
+            android:textSize="@dimen/text_size_sub_default" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/id_select_customer_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:layout_weight="1"
+            android:entries="@array/loading"
+            android:padding="@dimen/margin10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin10dp"
+            android:text="拜访主题:"
+            android:textSize="@dimen/text_size_sub_default" />
+
+        <EditText
+            android:id="@+id/visit_theme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:layout_weight="1"
+            android:padding="@dimen/margin10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="@dimen/text_size_sub_default" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin10dp"
+            android:text="拜访时间:"
+            android:textSize="@dimen/text_size_sub_default" />
+
+        <TextView
+            android:id="@+id/visit_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="@dimen/text_size_sub_default" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin10dp"
+            android:text="拜访地址:"
+            android:textSize="@dimen/text_size_sub_default" />
+
+        <TextView
+            android:id="@+id/visit_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:padding="@dimen/margin10dp"
+            android:text="@string/isLocating"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="@dimen/text_size_sub_default" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/id_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin20dp"
+        android:background="@drawable/round_corners_bg"
+        android:gravity="center"
+        android:padding="@dimen/margin10dp"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_default" />
+
+</LinearLayout>

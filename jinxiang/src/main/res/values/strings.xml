@@ -1,0 +1,232 @@
+<resources>
+    <!--Base String-->
+    <string name="app_name">劲翔智慧产业</string>
+    <string name="close">关闭</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="login">登录</string>
+    <string name="open">打开</string>
+    <string name="exit">退出</string>
+    <string name="username_error">账号不能为空</string>
+    <string name="password_error">密码不能为空</string>
+    <string name="version_info">版本信息</string>
+    <string name="action_settings">@string/setting</string>
+    <string name="electronic_bulletin">电子公告</string>
+    <string name="myInfo">我的资料</string>
+    <string name="matter_detail">事件详细</string>
+    <!--Base String-->
+
+    <string name="forget_password">忘记密码?</string>
+    <string name="swipe_to_refresh">下拉刷新</string>
+    <string name="setting">设置</string>
+
+    <string name="phone_number">手机号码</string>
+    <string name="office_number">办公室号码</string>
+    <string name="title_activity_my_info">我的资料</string>
+    <string name="agree">同意</string>
+    <string name="giveBack">退回</string>
+    <string name="contactDetai">联系人详情</string>
+
+    <string-array name="loading">
+        <item>获取客户列表中...</item>
+    </string-array>
+    <string-array name="CustomerIndustry">
+        <item>农、林、牧、渔业</item>
+        <item>制造业</item>
+        <item>信息传输、计算机服务业和软件业</item>
+        <item>住宿和餐饮业</item>
+        <item>金融业</item>
+        <item>批发和零售业</item>
+        <item>非金属矿物制品业</item>
+        <item>设备制造业</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="CustomerArea">
+        <item>丰泽区</item>
+        <item>鲤城区</item>
+        <item>洛江区</item>
+        <item>泉港区</item>
+        <item>晋江市</item>
+        <item>南安市</item>
+        <item>石狮市</item>
+        <item>惠安县</item>
+        <item>安溪县</item>
+        <item>永春县</item>
+        <item>德化县</item>
+    </string-array>
+    <string-array name="CustomerResource">
+        <item>电话来访</item>
+        <item>客户介绍</item>
+        <item>独立开发</item>
+        <item>公开招标</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="PotentialLevel">
+        <item>即将签订合同</item>
+        <item>有意向需长期跟踪</item>
+        <item>近期内可以签单</item>
+        <item>营销失败客户</item>
+    </string-array>
+    <string-array name="CustomerLevel">
+        <item>大客户</item>
+        <item>中客户</item>
+        <item>小客户</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="basic_info">基本信息</string>
+    <string name="handle_opinion">办理意见</string>
+    <string name="sysflow_log">流程日志</string>
+    <string name="title_activity_my_visit_record">@string/visit_record</string>
+    <string name="visit_record">拜访记录</string>
+    <string name="visit_sign">拜访签到</string>
+    <string name="title_activity_visit_detail">拜访详情</string>
+    <string name="visit_theme">拜访主题：</string>
+    <string name="visit_time">拜访时间：</string>
+    <string name="visit_customer">拜访客户：</string>
+    <string name="visit_customer_manager">@string/customer_manager</string>
+    <string name="visit_address">联系地址：</string>
+    <string name="visit_result">拜访结果：</string>
+    <string name="title_activity_customer_search">客户查询</string>
+    <string name="PotentialLevel">潜在级别：</string>
+    <string name="customerLevel">客户等级：</string>
+    <string name="customerResource">客户来源：</string>
+    <string name="customerArea">归属片区：</string>
+    <string name="customerIndustry">客户行业：</string>
+    <string name="title_activity_my_customer">我的客户</string>
+    <string name="title_activity_customer_detail_info">客户信息</string>
+    <string name="customer_name">客户名称：</string>
+    <string name="customer_type">客户类型：</string>
+    <string name="qianzai_level">潜在级别：</string>
+    <string name="contact_addr">联系地址：</string>
+    <string name="remark">备     注：</string>
+    <string name="setUp_date">成立日期：</string>
+    <string name="staff_count">职员总数：</string>
+    <string name="RegisteredCapital">注册资金：</string>
+    <string name="year_Turnover">年营业额：</string>
+    <string name="LegalAddr">法定地址：</string>
+    <string name="fax_number">传真号码</string>
+    <string name="e_mail">电子邮箱</string>
+    <string name="title_activity_my_project">项目合同</string>
+    <string name="title_activity_project_detail">项目信息</string>
+    <string name="serial_number">流 水 号：</string>
+    <string name="title">  标   题：</string>
+    <string name="project_price">项目金额：</string>
+    <string name="payment_mode">付款方式：</string>
+    <string name="contract_no">合同编号：</string>
+    <string name="title_activity_project_contact_detail">联系人详情</string>
+    <string name="role_type">角色类型</string>
+    <string name="main_contact">主要联系人</string>
+    <string name="support_level">支持程度</string>
+    <string name="business_name">业务事项</string>
+    <string name="agent_cost">代理费用</string>
+    <string name="official_cost">官方费用</string>
+    <string name="other_cost">其他费用</string>
+    <string name="total_cost">总费用</string>
+    <string name="handle_time">执行时间：</string>
+    <string name="id_rate">累计进度：</string>
+    <string name="handle_content">执行内容：</string>
+    <string name="handler_man">执行人员：</string>
+    <string name="next_step">下一步骤：</string>
+    <string name="next_handler">下一办理人：</string>
+    <string name="operate_name">操作名称：</string>
+    <string name="current_step">当前步骤：</string>
+    <string name="handler">办 理 人：</string>
+    <string name="title_activity_back">退回</string>
+    <string name="title_activity_finish_flow">结束</string>
+    <string name="title_activity_my_company_contacts">我的联系人</string>
+    <string name="phone_num">电话号码</string>
+    <string name="content_not_right">内容填写不完整</string>
+    <string name="Phone_not_exist">号码不存在</string>
+    <string name="search_fail_no_contact">暂无该联系人</string>
+    <string name="about_us">关于我们</string>
+    <string name="check_update">检查更新</string>
+    <string name="share">分享</string>
+    <string name="login_faild_please_retry">登陆失败，请重试</string>
+    <string name="no_customer_info">没有客户信息</string>
+    <string name="sign_success">签到成功</string>
+    <string name="title_activity_about_us">@string/about_us</string>
+    <string name="sure_update">发现新版本</string>
+    <string name="downloading">正在下载...</string>
+    <string name="ready_download">准备下载...</string>
+    <string name="is_loading">下载中...(</string>
+    <string name="is_loading1">%)</string>
+    <string name="download_success">下载完成 ( 100% )</string>
+    <string name="install_tint">(提示:安装包保存在SD卡根目录下)</string>
+    <string name="release_detail">公告详情</string>
+    <string name="not_need_update">已经是最新版本</string>
+    <string name="isNull_noSearch">客户列表为空</string>
+    <string name="project_null">项目列表为空</string>
+    <string name="no_visit_record">没有拜访记录</string>
+    <string name="back_reason">请填写退回原因</string>
+    <string name="get_addr_retry">地址获取失败,正在尝试重新获取</string>
+    <string name="start_project">发起项目</string>
+    <string name="current_version">"版本更新   (当前版本: "</string>
+    <string name="add_customer">新增客户</string>
+    <string name="download">下载</string>
+    <string name="title_activity_my_cooperate_chance">我的合作机会</string>
+    <string name="title_activity_cooperate_chance_detail">合作机会详情</string>
+
+    <string name="cooperate_list_null">合作机会列表为空</string>
+    <string name="title_activity_new_customer">@string/add_customer</string>
+    <string name="title_activity_new_customer_contacts">新增客户</string>
+
+    <string name="title_activity_new_customer_contact_info">新增客户联系人</string>
+    <string name="add_contact">添加联系人</string>
+
+    <string name="order_no">流 水 号：</string>
+    <string name="stage">阶   段：</string>
+    <string name="customer_manager">客户经理：</string>
+    <string name="changed_stage">阶   段：</string>
+    <string name="change_reason">变更原因：</string>
+    <string name="changed_staff">变更人员：</string>
+    <string name="please_choose">-请选择-</string>
+    <string name="name">姓   名：</string>
+    <string name="phone">手机号码：</string>
+    <string name="called">称   谓：</string>
+    <string name="position">职   务：</string>
+    <string name="fax">传真号码：</string>
+    <string name="email">邮   箱：</string>
+    <string name="addr">地   址：</string>
+    <string name="reMark">备   注：</string>
+    <string name="emp_no">工   号：</string>
+    <string name="intent">意向项目：</string>
+    <string name="title_activity_new_cooperate">合作机会</string>
+
+    <string name="next">继续</string>
+    <string name="choose_customer">选择客户：</string>
+    <string name="title_activity_new_cooperate_contacts_and_matters">
+        合作机会
+    </string>
+    <string name="totalCost">总 费 用：</string>
+    <string name="title_activity_cooperate_add_contact">添加联系人</string>
+    <string name="add_matter">添加业务事项</string>
+    <string name="title_activity_cooperate_add_matter">@string/add_matter</string>
+    <string name="matter">业务事项：</string>
+    <string name="office_cost">官方费用：</string>
+    <string name="other_costs">其他费用：</string>
+    <string name="total_Costs">总 费 用：</string>
+    <string name="submit">提交</string>
+    <string name="stage_change">阶段变更</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="transform_project">转为合同</string>
+    <string name="end_Date">到期日期：</string>
+    <string name="project_no">合同编号：</string>
+    <string name="title_activity_post_project_to_flow">提交项目到流程</string>
+    <string name="next_node_operator">下一节点操作人员：</string>
+    <string name="handle_oppion">处理意见：</string>
+    <string name="title_activity_travel_reg">出差登记</string>
+    <string name="dasilu">福建大思路信息科技有限公司 技术支持</string>
+    <string name="jinxiang">Copyright© 劲翔智慧产业 版权所有</string>
+    <string name="version_code">版 本 号：</string>
+    <string name="write_suggestion">请填写意见</string>
+    <string name="total_days">总时间(小时)</string>
+    <string name="leave_reason">请假事由</string>
+    <string name="sir">先生</string>
+    <string name="phone_num_not_find">未找到号码</string>
+    <string name="isLocating">正在定位,请稍候</string>
+    <string name="check_network_setting">请检查网络设置</string>
+
+
+</resources>

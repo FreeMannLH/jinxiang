@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin10dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                android:id="@+id/id_log_date"
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:textColor="@color/holo_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/handler"
+                />
+
+            <TextView
+                android:id="@+id/id_handler_name"
+                style="@style/project_rate_item"
+                android:background="@null"
+                android:textColor="@color/holo_light_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/current_step"
+                />
+
+            <TextView
+                android:id="@+id/id_current_step"
+                style="@style/project_rate_item"
+                android:background="@null"
+                android:textColor="@color/text_handle_time_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/operate_name"
+                />
+
+            <TextView
+                android:id="@+id/id_operate_name"
+                style="@style/project_rate_item"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/next_handler"
+                />
+
+            <TextView
+                android:id="@+id/id_next_step_handler"
+                style="@style/project_rate_item"
+                android:background="@null"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5dp">
+
+            <TextView
+                style="@style/visit_detail_item_style"
+                android:background="@null"
+                android:text="@string/next_step"
+                />
+
+            <TextView
+                android:textColor="@color/gplus_color_4"
+                android:id="@+id/id_next_step"
+                style="@style/project_rate_item"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

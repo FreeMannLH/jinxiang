@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:id="@+id/add_contact_tv"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:layout_marginLeft="@dimen/margin10dp"
+        android:layout_marginRight="@dimen/margin10dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin10dp"
+        android:text="@string/add_contact"
+        android:textColor="@color/material_blue_toolbar"
+        android:textSize="@dimen/text_size_default"/>
+
+    <Space
+        style="@style/style_divider"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
